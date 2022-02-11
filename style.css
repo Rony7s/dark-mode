@@ -1,0 +1,46 @@
+:root{
+    --green: #008000;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background:var(--green);
+    width: 100vw;
+    height: 100vh;
+}
+
+body.active{
+    --green: #000000;
+    --black: #008000;
+}
+
+#mode_changer{
+    top:1.5rem; left: 2rem;
+    position: fixed;
+    z-index: 1000;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 1px solid#ddd;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    color:white;
+    background: var(--black);
+}
+
+#mode_changer:hover{
+    color:var(--green);
+}
+
+.world{
+    text-align: center;
+    font-size: large;
+    color:var(--black);
+}
